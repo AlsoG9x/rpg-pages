@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-      <title>RPG PAGES WIKI</title>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://raw.githubusercontent.com/Jucyio/marked/master/lib/marked.js"></script>
-      <script src="https://raw.githubusercontent.com/Jucyio/js-github-wiki/master/js/githubwiki.js"></script>
+      <title>GithubWiki</title>
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/marked/lib/marked.js"></script>
+      <script src="bower_components/github-wiki/js/githubwiki.js"></script>
   </head>
   <body>
     <div id="content"></div>
@@ -14,11 +14,6 @@
       githubwiki.get("Home.md", function(text) {
         document.getElementById('content').innerHTML = text;
       });
-      
      </script>
-    
-    
-    <p> Hello </p>
-    
   </body>
 </html>
