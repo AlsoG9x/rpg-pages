@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+      <title>GithubWiki</title>
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/marked/lib/marked.js"></script>
+      <script src="bower_components/github-wiki/js/githubwiki.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script>
+      githubwiki.setWiki('AlsoG9x', 'rpg-pages');
+      githubwiki.get("Home.md", function(text) {
+        document.getElementById('content').innerHTML = text;
+      });
+     </script>
+  </body>
+</html>
