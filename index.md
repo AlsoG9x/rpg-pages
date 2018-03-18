@@ -35,24 +35,3 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8"/>
-      <title>GithubWiki</title>
-      <script src="node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="bower_components/marked/lib/marked.js"></script>
-      <script src="bower_components/github-wiki/js/githubwiki.js"></script>
-  </head>
-  <body>
-    <div id="content"></div>
-    <script>
-      githubwiki.setWiki('SchoolIdolTomodachi', 'frgl');
-      githubwiki.get("Home.md", function(text) {
-        document.getElementById('content').innerHTML = text;
-      });
-     </script>
-  </body>
-</html>
